@@ -3,7 +3,7 @@
 
 ## Project 3 Instructions / Directions
 
-- Instructions for [project 3]https://bootcampspot.instructure.com/courses/5432/pages/23-final-project-overview?module_item_id=1201422) provided by the course instructors.
+- Instructions for [project 3](https://bootcampspot.instructure.com/courses/5432/pages/23-final-project-overview?module_item_id=1201422) provided by the course instructors.
 
 For the Final Project, you will work with your group to collaboratively solve or analyze a problem using advanced ML methodologies. In your solution, you will incorporate transformer models, natural language processing (NLP) techniques, and other tools acquired throughout the course, in addition to at least one new technology that we haven’t covered together.
 
@@ -35,8 +35,8 @@ You must use one additional library or technology NOT covered in class.  We chos
 
     
 ## Project Ideation:  
-Traffic Safety, is the selected focus for our project.  Specifically, we're focused on the accidents that occur in the state of Colorado.  Our dataset is one from Kaggle, the "US-Accidents: A Countrywide Traffic Accident Dataset".  https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents.
-Using traffic data captured by various entities, including the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road networks, provided by Kaggle https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents. 
+Traffic Safety, is the selected focus for our project.  Specifically, we're focused on the accidents that occur in the state of Colorado.  Our dataset is one from Kaggle, the "US-Accidents: A Countrywide Traffic Accident Dataset".  [Data Source for Accidents](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents).
+Using traffic data captured by various entities, including the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road networks, provided by Kaggle [Accidents Data](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents). 
 
      o  Determine the best model configurations to predict crashes.
      o  Identify the different classifications of crashes and potential impact within each classification. 
@@ -77,7 +77,7 @@ Creating the presentation - Complete 7/30
  - Analyze all 9,0885 Colorado crashes that were collected from February 2016 to March 2023.
     - Our analyze included all Colorado traffic crash data, our acuracy predictions were based on Weather, County and Street.
  - Identify the different classifications of crashes and potential impact within each classification.
-    - The data dictionary for our data set can be found at https://smoosavi.org/datasets/us_accidents. Crashes are classified by the "severity" column shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic (i.e., short delay as a result of the accident) and 4 indicates a significant impact on traffic (i.e., long delay). Our analysis used "severity" to identify a crash
+    - The data dictionary for our data set can be found at [Dictionary](https://smoosavi.org/datasets/us_accidents). Crashes are classified by the "severity" column shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic (i.e., short delay as a result of the accident) and 4 indicates a significant impact on traffic (i.e., long delay). Our analysis used "severity" to identify a crash
 
 ## Analysis Approach
 
