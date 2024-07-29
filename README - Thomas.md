@@ -122,9 +122,21 @@ The analysis was broken into multiple steps with a Jupyter notebook for each ste
 
 TBD 
 
+
+## Data Sources
+- Clean and Consistent
+- Inconsistent and Duplicative
+- Standardization Approach
+
+TBD
+
+
 ## Result/Conclusion
 Our accuracy predictions:
 
 - Weather Accuracy: 0.35014522075653076
 - County Accuracy: 0.14039257168769836
 - Street Accuracy: 0.9916666746139526
+
+
+## Future Considerations
