@@ -118,7 +118,7 @@ The analysis was broken into multiple steps with a Jupyter notebook for each ste
 - Print the accuracy
 - Calculate Duration
 
-### Jupyter notebook: step2_analyze_street_and_county_data:
+### Jupyter notebook: step3_analyze_street_and_county_data:
 
 TBD 
 
