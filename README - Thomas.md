@@ -75,7 +75,7 @@ Creating the presentation - Complete 7/30
 
 -Goals: 
  - Analyze all 90,885 Colorado crashes that were collected from February 2016 to March 2023.
-    - Our analyze included all Colorado traffic crash data, our acuracy predictions were based on Weather, County and Street.
+    - Our analysis included all Colorado traffic crash data, our accuracy predictions were based on Weather, County and Street.
  - Identify the different classifications of crashes and potential impact within each classification.
     - The data dictionary for our data set can be found at [Dictionary](https://smoosavi.org/datasets/us_accidents). Crashes are classified by the "severity" column shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic (i.e., short delay as a result of the accident) and 4 indicates a significant impact on traffic (i.e., long delay). Our analysis used "severity" to identify a crash
 
@@ -84,7 +84,7 @@ Creating the presentation - Complete 7/30
 The analysis was broken into multiple steps with a Jupyter notebook for each step.
 - Step1_build_base_data.ipynb
 - Step2_analyze_weather_and_county_data
-- Step3_analyze_street_and_country_data
+- Step3_analyze_street_and_county_data
 
     Step duration is calculated (see Duration in each step detail below)
 
