@@ -17,6 +17,7 @@ For instance,
 ***OneHotEncoder*** used for:
 
         Weather_Condition
+        Street
 
 ***LabelEncoder*** used for:
 
