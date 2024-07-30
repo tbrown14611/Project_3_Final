@@ -32,6 +32,28 @@ You must use one additional library or technology NOT covered in class.  We chos
     - Check Custom Glyphs
     - Check Enable Images
 
+PyTorch Test Run produced the following results based on the following code:
+
+#GPU 
+b = torch.ones(4000,4000).cuda() # Create matrix on GPU memory
+start_time = timer() 
+for _ in range(1000): 
+    b += b 
+elapsed_time = timer() - start_time 
+
+print('GPU time = ',elapsed_time)
+
+#CPU
+a = torch.ones(4000,4000) # Create matrix on CPU memory
+start_time = timer()
+for _ in range(1000):
+    a += a
+elapsed_time = timer() - start_time
+
+Results:
+    GPU time =  0.007673599990084767
+    CPU time =  2.526412000064738
+
 ## Project Overview 
 
 Traffic Accidents, is the selected focus for our project.  Specifically, we're focused on the accidents that occur in the state of Colorado.  Our dataset is one from Kaggle, the "US-Accidents: A Countrywide Traffic Accident Dataset".  [Data Source for Accidents](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents).
