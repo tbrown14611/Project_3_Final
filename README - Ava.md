@@ -1,5 +1,6 @@
 # Project_3_Final - Ava
 
+## Data Clean_Up
 We focused on three parameters from the dataset: ‘***Weather***,’ ‘***County***,' and ‘***Street***. '
 
 We cleaned the data, starting with:
