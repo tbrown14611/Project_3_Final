@@ -45,7 +45,6 @@ Ultimately, using our model(s) here,  CODOT could identify road improvement pros
 
 ## Data Cleanup (TBD)
 
-## Project Summary
 
 Determine the best model configurations to predict crashes and identify the different classifications of crashes and potentially the impact within each. 
 
@@ -55,19 +54,19 @@ Determine the best model configurations to predict crashes and identify the diff
 
 - Data exploration - Complete 7/26
 
-Data transformation - Complete 7/26
+- Data transformation - Complete 7/26
 
-Data analysis - Complete 7/27
+- Data analysis - Complete 7/27
 
-Data cleaning and preprocessing - Complete 7/27
+- Data cleaning and preprocessing - Complete 7/27
 
-Testing ML models - Complete 7/27 
+- Testing ML models - Complete 7/27 
 
-Integrate AI tools into the project for deployment - Complete 7/27
+- Integrate AI tools into the project for deployment - Complete 7/27
 
-Creating documentation - Complete 7/29
+- Creating documentation - Complete 7/29
 
-Creating the presentation - Complete 7/30
+- Creating the presentation - Complete 7/30
 
 
 ## Questions, Analysis and Summary
