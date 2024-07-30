@@ -34,19 +34,19 @@ You must use one additional library or technology NOT covered in class.  We chos
 
 ## Project Overview 
 
-Traffic Accidents, is the selected focus for our project.  Specifically, we're focused on the accidents that occur in the state of Colorado.  Our dataset is one from Kaggle, the "US-Accidents: A Countrywide Traffic Accident Dataset".  https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents
-Our dataset has 7.7 million records, covering 49 states, omitting just Hawaii.  However, analysis reveals that there isn't any data for Alaska either. This dataset was initially published in 2016 by Sobhan Moosavi, a Data Scientist at Lyft, Inc.  Sobhan's CV can be obtained at https://smoosavi.org/cv/ .  The dataset contains crash data starting from February, 2016 through March, 2023. The data is generated continously via multiple APIs that provide streaming traffic event data from serveral enties such as US and state department of transportation, law enforcement agencies, traffic cameras, and traffic sensors within road networks.  https://smoosavi.org/datasets/us_accidents .
+Traffic Accidents, is the selected focus for our project.  Specifically, we're focused on the accidents that occur in the state of Colorado.  Our dataset is one from Kaggle, the "US-Accidents: A Countrywide Traffic Accident Dataset".  [Data Source for Accidents](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents).
+Our dataset has 7.7 million records, covering 49 states, omitting just Hawaii.  However, analysis reveals that there isn't any data for Alaska either. This dataset was initially published in 2016 by Sobhan Moosavi, a Data Scientist at Lyft, Inc.  Sobhan's CV can be obtained at [Dictionary](https://smoosavi.org/datasets/us_accidents).  The dataset contains crash data starting from February, 2016 through March, 2023. The data is generated continously via multiple APIs that provide streaming traffic event data from serveral enties such as US and state department of transportation, law enforcement agencies, traffic cameras, and traffic sensors within road networks. [Accidents Data](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents). 
 
 ## Project Ideation:  
-Traffic Safety, is the selected focus for our project.  Specifically, we're focused on the accidents that occur in the state of Colorado.  Our dataset is one from Kaggle, the "US-Accidents: A Countrywide Traffic Accident Dataset".  [Data Source for Accidents](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents).
-Using traffic data captured by various entities, including the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road networks, provided by Kaggle [Accidents Data](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents). 
+Traffic Safety, is the selected focus for our project.  Specifically, we're focused on the accidents that occur in the state of Colorado.  
+Using traffic data captured by various entities, including the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road networks, provided by Kaggle. Our Goals for this project are:
 
      o  Determine the best model configurations to predict crashes.
      o  Identify the different classifications of crashes and potential impact within each classification. 
 
 Ultimately, using our model(s) here,  CODOT could identify road improvement prospects for improved safety
 
-## Data Cleanup (TBD)
+## Data Cleanup (TBD - AVA)
 
 
 Determine the best model configurations to predict crashes and identify the different classifications of crashes and potentially the impact within each. 
@@ -122,8 +122,29 @@ The analysis was broken into multiple steps with a Jupyter notebook for each ste
 
 ### Jupyter notebook: step3_analyze_street_and_county_data:
 
-TBD 
-
+- Set start time
+- Import the data
+- What top 30 streets have the most accidents?
+- Store the street names of the top 30 with accidents in a list.
+- get top30 streets with accidents in CO and store in a dataframe called top30_df
+- extract relevant columns and display 'em
+- reset the index of relevant_df
+- find and display severity counts (accidents by severity)
+- find and display county counts (accidents by county)
+- Update CO_crashes_df with numeric county code
+- find and display severity counts (accidents by severity)
+- Preprocess Street Data - Encode top 30 streets by accidents
+- display column, null, and Dtype info for encoded street data
+- set street to analyze with pvalue <.05
+- find and display encoded counts (0 = row without an accident; 1 = row with accident)
+- define X and create train - test - split
+- Create the shared layers of the model
+- Branch for street prediction
+- Create the model
+- Fit the model
+- Evaluate the model with the testing data
+- Print the accuracy
+- Calculate Duration
 
 ## Data Sources
 - Clean and Consistent
