@@ -15,10 +15,10 @@ We primarily used LabelEncoder and OneHotEncoder to encode data.
 For instance,
 ***OneHotEncoder*** used for:
 
-   Weather_Condition
+        Weather_Condition
 
 ***LabelEncoder*** used for:
 
-   ID
+        ID
 
 For the street, we retrieved the top 30 stats with accidents and ran the correlation relationship for the top 30 streets.
