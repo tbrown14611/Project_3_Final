@@ -14,6 +14,7 @@ We cleaned the data, starting with:
 We primarily used LabelEncoder and OneHotEncoder to encode data.
 
 For instance,
+
 ***OneHotEncoder*** used for:
 
         Weather_Condition
