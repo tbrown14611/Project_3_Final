@@ -182,9 +182,6 @@ The analysis was broken into multiple steps with a Jupyter notebook for each ste
               Remove duplicates from Weather Conditions
 
 
-TBD
-
-
 ## Result/Conclusion
 Our accuracy predictions:
 
@@ -194,3 +191,6 @@ Our accuracy predictions:
 
 
 ## Future Considerations
+
+May be able to leverage other data in the Accidents table (Latitude and Longitude) to help improve accuracy. 
+Additional data sets could be used to give a complete picture of all traffic (accidents or not) to improve model accuracy.
