@@ -64,6 +64,9 @@ Traffic Safety, is the selected focus for our project.  Specifically, we're focu
 Using traffic data captured by various entities, including the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road networks, provided by Kaggle. Our Goals for this project are:
 
      o  Determine the best model configurations to predict crashes.
+        o Determine the best model to analyze all 90,885 Colorado crashes that were collected from February 2016 to March 2023.
+        o Analyze all Colorado traffic crash data, and record accuracy calculations for Weather, County and Street.
+     
      o  Identify the different classifications of crashes and potential impact within each classification. 
 
 Ultimately, using our model(s) here,  CODOT could identify road improvement prospects for improved safety
@@ -170,8 +173,14 @@ The analysis was broken into multiple steps with a Jupyter notebook for each ste
 
 ## Data Sources
 - Clean and Consistent
+               Contains Colorado only
+               Update County to numeric
+               Calculate P values for streets
+               Encode top 30 streets by accidents
+
 - Inconsistent and Duplicative
-- Standardization Approach
+              Remove duplicates from Weather Conditions
+
 
 TBD
 
