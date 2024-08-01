@@ -183,34 +183,7 @@ The analysis was broken into multiple steps with a Jupyter notebook for each ste
               Remove duplicates from Weather Conditions
 
 
-## Result/Conclusion
-Our accuracy predictions:
-
-- Weather Accuracy: 0.35014522075653076
-- County Accuracy: 0.14039257168769836
-- Intial Top30 Street Accuracy: 0.11454081535339355
-
 ### Traffic Analysis by Street and County 
-
-In this analysis, tenserflow was the model used to attempt accident prediction, where severity was assigned the model's X value.  Street name and county name were used to identify where the accident occurred and both were the tenserflow 'y' values (y_street and y_county).  Initially all streets in Colorado were considered for analysis, however, after finding out that the number of unique Colorado streets contained in the data that had accidents was 4,744, it was decided to reduce the analysis down to the streets that fell in the top5 to top30 with the most accidents. This reduced the volume of data accordingly to 51.8%, 47.6%, 44%, 40% and 31.8% for the top30, top20, top15, top10, and top5 respectively. These groups became the groups of primary focus. Each group was iteratively processed by first encoding the streets through onehot encoding, producing a column for each street in the group, and splitting the data into test and train datasets that were fitted to the nueron network model.  The accuracy results for each group of streets is listed below, all extremely low.
-
-#### Top 5 to 30 streets by # of accidents - accuracy score
-
-![Top_Street_Groups](/Resources/images/Top_Street_Groups.png)
-
-Given at the time, the team had one week left to improve the above accuracy, the sentiment was beginning to lean towards focusing on write-up and presentation rather than spend more time on model optimization.  Nonetheless, one more analysis was pursued.  This involved applying a p-value test to the top 30 group with the results as shown below.  
-
-#### Top 30 streets by # of accidents and pvalue correlating severity and street
-
-The result showed several streets (13) to investigate further, focusing only on those with a pvalue less than .05% and greater than 0.
-
-![The best 13 street amoung top30 with valid pvalues ](/Resources/images/Best_pvalues_ofTop30.png)
-
-Below is a graph depicting the pvalues of the top30 reduced to just those with less than .05.
-
-### Traffic Analysis by Street and County
-
-After cleaning the street data, which had only 158 null or missing values, 90,727 records remained to proceed with. One column, severity, provided the only resemblence of accidents that occurred. The severity rating of 1 through 4, rated only the delay associated with any given accident, that impacted traffic conditions at the time.  Severity 1 was given to accidents that impacted traffic flow the least amount, where 2, 3, and 4 we're given to accidents with greater levels of traffic delay.  Severity 4 was considered the worst impact to traffic flow.  
 
 In this analysis, tenserflow was the model used to attempt accident prediction, where severity was assigned the model's X value.  Street name and county name were used to identify where the accident occurred and both were the tenserflow 'y' values (y_street and y_county).  Initially all streets in Colorado were considered for analysis, however, after finding out that the number of unique Colorado streets contained in the data that had accidents was 4,744, it was decided to reduce the analysis down to the streets that fell in the top5 to top30 with the most accidents. This reduced the volume of data accordingly to 51.8%, 47.6%, 44%, 40% and 31.8% for the top30, top20, top15, top10, and top5 respectively. These groups became the groups of primary focus. Each group was iteratively processed by first encoding the streets through onehot encoding, producing a column for each street in the group, and splitting the data into test and train datasets that were fitted to the nueron network model.  The accuracy results for each group of streets is listed below, all extremely low.
 
@@ -233,22 +206,10 @@ The result showed several streets (13) to investigate further, focusing only on 
 
 To analyze each of these individually through the same model, the model unit# for street output was changed to 1 from multiple values earlier, and the activation to "sigmoid" from "softmax".  Likewise, the loss for street output was changed to binary crossenthropy from catagorical.    
 
-Nearly in all cases, the accuracy improved from low teens up to low 80's to high 90's.  This seemed to good and over-fitting became suspect.  
+Nearly in all cases, the accuracy improved from low teens to low thirties up to low 80's to high 90's.  This seemed too good and over-fitting became suspect.  
 Therefore, value counts were analyzed for the 0 and 1 classification out of the one-hot encoding.  This showed that the number of crashes (encoding=1) had a very low positive value when compared to the encoding=0, or no crash for the given severity and county.  This indicates that the data is unbalanced.  The plot below shows the accuracy for each of the 13 streets and their corresponding unbalanced negative value.  It is nearly a perfect overfit comparison between the two.
 
 ![Top13 with valid pvalues](/Resources/images/Street_Accuracy_Overfit.png)
-
-## Summary
-
-Given that the data is unbalanced, techniques could be performed to potentially improve the imbalance, or to changed biased data to be less so.  These are removing samples from the majority class, which in this case is the "negative crash" encoding=0.  Another option would be to add samples to the positive encoding=1. Yet even another option suggested in course work is to SMOLT the data. SMOLT, or Synthetic Minority Oversampling Techique, is similar to the second option listed where samples are added (actually duplicated) in the minority class.  
-
-Prior to changing any of the data, one more option needs to be explored.  This involves using the Longitude and Latitude information contained within the crash data.  This in turn may identify hot spots for crashes which would be more in line with our goal and with more time, be pursued and accuracy improved without being overfit. 
-   
-
-Nearly in all cases, the accuracy improved from low teens up to low 80's and high 90's.  This seemed to good and over-fitting became suspect.  
-Therefore, value counts were analyzed for the 0 and 1 classification out of the one-hot encoding.  This showed that the number of crashes (encoding=1) had a very low positive value when compared to the encoding=0, or no crash for the given severity and county.  This indicates that the data is unbalanced.  The plot below shows the accuracy for each of the 13 streets and their corresponding unbalanced negative value.  It is nearly a perfect overfit comparison between the two.
-
-![Top13 Street Accuracy vs. Unbalanced Data - % Negative Class ](/Resources/images/Street_Accuracy_Overfit.png)
 
 ## Street Analysis Summary
 
@@ -256,7 +217,12 @@ Given that the data is unbalanced, techniques could be performed to potentially 
 
 Prior to changing any of the data, one more option needs to be explored.  This involves using the Longitude and Latitude information contained within the crash data.  This in turn may identify hot spots for crashes which would be more in line with our goal and with more time, be pursued and accuracy improved without being overfit. 
 
+## Result/Conclusion
+Our accuracy predictions:
 
+- Weather Accuracy: 0.35014522075653076
+- County Accuracy: 0.14039257168769836
+- Initial Top30 Street Accuracy: 0.11454081535339355
 
 
 ## Future Considerations
